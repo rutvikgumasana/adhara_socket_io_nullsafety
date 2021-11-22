@@ -1,0 +1,25 @@
+name: adhara_socket_io
+description: Websocket by socket.io for flutter by adhara, supports both iOS and Android
+version: 1.0.0
+author: Rohit R. Abbadi <rohit@infitio.com>
+homepage: https://github.com/infitio/flutter_socket_io
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.22.6"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pedantic: ^1.9.2
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.infitio.adharasocketio
+        pluginClass: AdharaSocketIoPlugin
+      ios:
+        pluginClass: AdharaSocketIoPlugin
+      macos:
+        pluginClass: AdharaSocketIoPlugin
